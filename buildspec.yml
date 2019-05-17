@@ -1,0 +1,12 @@
+---
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt update; apt install -y yum-utils
+  build:
+    commands:
+      - ls
+      - reposync -c test.repo
+      - ls
